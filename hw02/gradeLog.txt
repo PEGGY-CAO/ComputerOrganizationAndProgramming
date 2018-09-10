@@ -1,0 +1,9 @@
+Operations.java: 
+	getByte: 5.0/5.0
+	setShort: 5.0/5.0
+	pack: 5.0/5.0
+	bitRange: 5.0/5.0
+	xnor: 5.0/5.0
+	powerOf2: 5.0/5.0
+	Perfect!
+Final Grade: 30.0/30.0
