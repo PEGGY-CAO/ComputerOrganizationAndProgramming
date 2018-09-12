@@ -1,0 +1,862 @@
+{
+  "version": "1.7.4",
+  "globalBitSize": 1,
+  "clockSpeed": 1,
+  "circuits": [
+    {
+      "name": "NOT",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 12,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "IN",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 21,
+          "y": 7,
+          "properties": {
+            "Type": "P-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 21,
+          "y": 18,
+          "properties": {
+            "Type": "N-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "NORTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 40,
+          "y": 12,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "OUT",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 22,
+          "y": 27,
+          "properties": {
+            "Label location": "SOUTH",
+            "Label": "GROUND",
+            "Value": "0",
+            "Direction": "NORTH",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 22,
+          "y": 2,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "POWER",
+            "Value": "1",
+            "Direction": "SOUTH",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": [
+        {
+          "x": 23,
+          "y": 22,
+          "length": 5,
+          "isHorizontal": false
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 13,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 15,
+          "y": 9,
+          "length": 4,
+          "isHorizontal": false
+        },
+        {
+          "x": 23,
+          "y": 13,
+          "length": 5,
+          "isHorizontal": false
+        },
+        {
+          "x": 23,
+          "y": 11,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 23,
+          "y": 4,
+          "length": 3,
+          "isHorizontal": false
+        },
+        {
+          "x": 23,
+          "y": 13,
+          "length": 17,
+          "isHorizontal": true
+        },
+        {
+          "x": 15,
+          "y": 13,
+          "length": 7,
+          "isHorizontal": false
+        },
+        {
+          "x": 15,
+          "y": 20,
+          "length": 6,
+          "isHorizontal": true
+        }
+      ]
+    },
+    {
+      "name": "NAND",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 25,
+          "y": 27,
+          "properties": {
+            "Label location": "SOUTH",
+            "Label": "GROUND",
+            "Value": "0",
+            "Direction": "NORTH",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 22,
+          "y": 6,
+          "properties": {
+            "Type": "P-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 7,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "A",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 46,
+          "y": 12,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "OUT",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 27,
+          "y": 17,
+          "properties": {
+            "Type": "N-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "NORTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 29,
+          "y": 6,
+          "properties": {
+            "Type": "P-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 27,
+          "y": 13,
+          "properties": {
+            "Type": "N-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "NORTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 16,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "B",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 25,
+          "y": 2,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "POWER",
+            "Value": "1",
+            "Direction": "SOUTH",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": [
+        {
+          "x": 16,
+          "y": 17,
+          "length": 10,
+          "isHorizontal": true
+        },
+        {
+          "x": 29,
+          "y": 13,
+          "length": 17,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 17,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 29,
+          "y": 21,
+          "length": 4,
+          "isHorizontal": false
+        },
+        {
+          "x": 29,
+          "y": 10,
+          "length": 2,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 6,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 29,
+          "y": 10,
+          "length": 3,
+          "isHorizontal": false
+        },
+        {
+          "x": 16,
+          "y": 19,
+          "length": 11,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 8,
+          "length": 9,
+          "isHorizontal": false
+        },
+        {
+          "x": 24,
+          "y": 10,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 15,
+          "length": 11,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 17,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 10,
+          "y": 8,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 8,
+          "length": 7,
+          "isHorizontal": false
+        },
+        {
+          "x": 26,
+          "y": 25,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "length": 2,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 8,
+          "length": 3,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 25,
+          "length": 3,
+          "isHorizontal": true
+        }
+      ]
+    },
+    {
+      "name": "NOR",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 20,
+          "y": 17,
+          "properties": {
+            "Type": "N-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "NORTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 24,
+          "y": 5,
+          "properties": {
+            "Type": "P-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 24,
+          "y": 11,
+          "properties": {
+            "Type": "P-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "SOUTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 25,
+          "y": 2,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "POWER",
+            "Value": "1",
+            "Direction": "SOUTH",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 18,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "B",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 8,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "A",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 46,
+          "y": 10,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "OUT",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.TransistorPeer",
+          "x": 27,
+          "y": 17,
+          "properties": {
+            "Type": "N-Type",
+            "Gate Location": "Left/Top",
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "NORTH"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 25,
+          "y": 27,
+          "properties": {
+            "Label location": "SOUTH",
+            "Label": "GROUND",
+            "Value": "0",
+            "Direction": "NORTH",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": [
+        {
+          "x": 26,
+          "y": 9,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 26,
+          "y": 21,
+          "length": 3,
+          "isHorizontal": true
+        },
+        {
+          "x": 15,
+          "y": 13,
+          "length": 6,
+          "isHorizontal": false
+        },
+        {
+          "x": 35,
+          "y": 11,
+          "length": 4,
+          "isHorizontal": false
+        },
+        {
+          "x": 23,
+          "y": 19,
+          "length": 6,
+          "isHorizontal": false
+        },
+        {
+          "x": 26,
+          "y": 17,
+          "length": 3,
+          "isHorizontal": true
+        },
+        {
+          "x": 22,
+          "y": 21,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 9,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 11,
+          "length": 11,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 15,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 26,
+          "y": 15,
+          "length": 9,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 21,
+          "length": 6,
+          "isHorizontal": false
+        },
+        {
+          "x": 16,
+          "y": 7,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 15,
+          "y": 19,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 25,
+          "length": 7,
+          "isHorizontal": true
+        },
+        {
+          "x": 15,
+          "y": 13,
+          "length": 9,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 4,
+          "length": 1,
+          "isHorizontal": false
+        },
+        {
+          "x": 22,
+          "y": 17,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 9,
+          "length": 16,
+          "isHorizontal": false
+        },
+        {
+          "x": 10,
+          "y": 19,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 23,
+          "y": 19,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 16,
+          "y": 7,
+          "length": 8,
+          "isHorizontal": true
+        }
+      ]
+    },
+    {
+      "name": "AND",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
+          "x": 39,
+          "y": 6,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Subcircuit": "NOT"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
+          "x": 25,
+          "y": 6,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Subcircuit": "NAND"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 8,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "B",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 4,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "A",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 46,
+          "y": 6,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "OUT",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        }
+      ],
+      "wires": [
+        {
+          "x": 24,
+          "y": 5,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "length": 1,
+          "isHorizontal": false
+        },
+        {
+          "x": 24,
+          "y": 7,
+          "length": 1,
+          "isHorizontal": true
+        },
+        {
+          "x": 42,
+          "y": 7,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "length": 14,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 9,
+          "length": 14,
+          "isHorizontal": true
+        },
+        {
+          "x": 28,
+          "y": 7,
+          "length": 11,
+          "isHorizontal": true
+        },
+        {
+          "x": 24,
+          "y": 8,
+          "length": 1,
+          "isHorizontal": true
+        }
+      ]
+    },
+    {
+      "name": "OR",
+      "components": [
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 46,
+          "y": 6,
+          "properties": {
+            "Label location": "EAST",
+            "Label": "OUT",
+            "Is input?": "No",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 8,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "B",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
+          "x": 21,
+          "y": 5,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Subcircuit": "NOR"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 8,
+          "y": 4,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "A",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
+          "x": 35,
+          "y": 6,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Subcircuit": "NOT"
+          }
+        }
+      ],
+      "wires": [
+        {
+          "x": 34,
+          "y": 7,
+          "length": 1,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 9,
+          "length": 10,
+          "isHorizontal": true
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "length": 10,
+          "isHorizontal": true
+        },
+        {
+          "x": 20,
+          "y": 7,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 20,
+          "y": 7,
+          "length": 1,
+          "isHorizontal": true
+        },
+        {
+          "x": 20,
+          "y": 5,
+          "length": 1,
+          "isHorizontal": false
+        },
+        {
+          "x": 20,
+          "y": 6,
+          "length": 1,
+          "isHorizontal": true
+        },
+        {
+          "x": 34,
+          "y": 6,
+          "length": 1,
+          "isHorizontal": false
+        },
+        {
+          "x": 24,
+          "y": 6,
+          "length": 10,
+          "isHorizontal": true
+        },
+        {
+          "x": 38,
+          "y": 7,
+          "length": 8,
+          "isHorizontal": true
+        }
+      ]
+    }
+  ]
+}
