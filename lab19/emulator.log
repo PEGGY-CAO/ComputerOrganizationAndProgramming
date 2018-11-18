@@ -1,0 +1,54 @@
+Starting Mednafen 0.9.48
+ Build information:
+   Compiled with gcc 7.2.0
+   Compiled against zlib 1.2.11, running with zlib 1.2.11(flags=0x000000a9)
+   Compiled against SDL 1.2.15, running with SDL 1.2.15
+   Running with libsndfile-1.0.28
+ Base directory: /home/peggy/.mednafen
+ Emulation modules: nes snes gb gba pce lynx md pcfx ngp psx ss ssfplay vb wswan sms gg snes_faust pce_fast demo cdplay
+ Loading settings from "/home/peggy/.mednafen/mednafen-09x.cfg"...
+  Loaded 12 valid settings and 0 unknown settings.
+ Initializing joysticks...
+ Loading Ghost.gba...
+  Applying IPS file "./Ghost.gba.ips"...
+   Failed: Error opening file "./Ghost.gba.ips": No such file or directory
+  Using module: gba(GameBoy Advance)
+   Loading override settings from "/home/peggy/.mednafen/gba.cfg"...
+    Failed: Error opening file "/home/peggy/.mednafen/gba.cfg": No such file or directory
+   Loading override settings from "/home/peggy/.mednafen/pgconfig/Ghost.gba.cfg"...
+    Failed: Error opening file "/home/peggy/.mednafen/pgconfig/Ghost.gba.cfg": No such file or directory
+
+   ROM:       10KiB
+   ROM CRC32: 0x487614ae
+   ROM MD5:   0xbccf5b40bfe2322bc5c03637ff1864cf
+
+  Loading custom palette from "/home/peggy/.mednafen/palettes/gba.pal"...
+   Error: Error opening file "/home/peggy/.mednafen/palettes/gba.pal": No such file or directory
+
+  Loading cheats from /home/peggy/.mednafen/cheats/gba.cht...
+   Error opening file "/home/peggy/.mednafen/cheats/gba.cht": No such file or directory
+
+ Initializing sound...
+  Using "ALSA" audio driver with SexyAL's default device selection.
+   Format: 16 bits(signed, 2 bytes, little-endian)
+   Rate: 48000
+   Channels: 2
+   Buffer size: 1560 sample frames(32.500000 ms)
+   Latency: 1560 sample frames(32.500000 ms)
+   Period size: 60 sample frames(1.250000 ms)
+ Initializing video...
+  Video Driver: OpenGL
+  Video Mode: 960 x 640 x 32 bpp
+  Shader: none
+  Fullscreen: No
+  Special Scaler: None
+  Scanlines: Off
+  Destination Rectangle: X=0, Y=0, W=960, H=640
+  OpenGL Implementation: VMware, Inc. SVGA3D; build: RELEASE;  LLVM; 3.0 Mesa 18.0.5
+  Checking extensions:
+   GL_ARB_texture_non_power_of_two found.
+   GL_ARB_sync found.
+  Using non-power-of-2 sized textures.
+  Checking maximum texture size...
+   Apparently it is at least: 4096 x 4096
+  Using GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV for texture source data.
