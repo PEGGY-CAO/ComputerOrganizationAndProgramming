@@ -1,7 +1,7 @@
 /*
  * Exported with nin10kit v1.7
  * Invocation command was nin10kit --mode=3 begin0 begin0.png 
- * Time-stamp: Saturday 11/17/2018, 14:14:43
+ * Time-stamp: Monday 11/19/2018, 14:34:36
  * 
  * Image Information
  * -----------------

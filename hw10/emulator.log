@@ -18,9 +18,9 @@ Starting Mednafen 0.9.48
    Loading override settings from "/home/peggy/.mednafen/pgconfig/WizardWorld.gba.cfg"...
     Failed: Error opening file "/home/peggy/.mednafen/pgconfig/WizardWorld.gba.cfg": No such file or directory
 
-   ROM:       94KiB
-   ROM CRC32: 0x20427afd
-   ROM MD5:   0xa774424e7b181e115e8121a3b1da249d
+   ROM:       382KiB
+   ROM CRC32: 0x20a8d5e3
+   ROM MD5:   0x41494eda913b4a0b973a3d03699812d2
 
   Loading custom palette from "/home/peggy/.mednafen/palettes/gba.pal"...
    Error: Error opening file "/home/peggy/.mednafen/palettes/gba.pal": No such file or directory
