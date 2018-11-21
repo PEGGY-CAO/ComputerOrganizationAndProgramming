@@ -37,13 +37,24 @@ void fullDrawAppState(AppState *state) {
     // TA-TODO: IMPLEMENT.
 	fillScreenDMA(WHITE);
 	drawImageDMA(60, 160, 56, 80, hedwig);
-    UNUSED(state);
+	Gate current = state->fallingGate;
+	//unsigned short ids[4] = {and, or, not, down};
+	int curid = current.id;
+	//const unsigned short cur = state->ids[curid];
+	if (curid == 0) drawImageDMA(current.row,current.col,40,40,and);
+	if (curid == 1) drawImageDMA(current.row,current.col,40,40,not);
+	if (curid == 2) drawImageDMA(current.row,current.col,40,40,or);
+	if (curid == 3) drawImageDMA(current.row,current.col,40,40,down);
+    //UNUSED(state);
 }
 
 // This function will be used to undraw (i.e. erase) things that might
 // move in a frame. E.g. in a Snake game, erase the Snake, the food & the score.
 void undrawAppState(AppState *state) {
     // TA-TODO: IMPLEMENT.
+	Gate current = state->fallingGate;
+
+	drawRectDMA(current.row,current.col,40,40,WHITE);
     UNUSED(state);
 }
 
@@ -51,7 +62,11 @@ void undrawAppState(AppState *state) {
 // For example, in a Snake game, draw the snake, the food, the score.
 void drawAppState(AppState *state) {
     // TA-TODO: IMPLEMENT.
-	Gate *current = state->fallingGate;
-	drawImageDMA(current->row, current->col, 40, 40, and);
-    UNUSED(state);
+	Gate current = state->fallingGate;
+	int curid = current.id;
+	if (curid == 0) drawImageDMA(current.row,current.col,40,40,and);
+	if (curid == 1) drawImageDMA(current.row,current.col,40,40,not);
+	if (curid == 2) drawImageDMA(current.row,current.col,40,40,or);
+	if (curid == 3) drawImageDMA(current.row,current.col,40,40,down);
+    //UNUSED(state);
 }

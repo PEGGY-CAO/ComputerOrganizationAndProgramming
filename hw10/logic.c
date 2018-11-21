@@ -10,9 +10,11 @@ void initializeAppState(AppState* appState) {
     // the value it should have when the app begins.
 	appState->gameOver = 0;
 	appState->win = 0;
-	Gate gateNow = {0, 0, 1};
-	appState->fallingGate = &gateNow;
 
+	int r = randint(0, 3);
+	Gate gateNow = {0, 40*r, r};
+	appState->fallingGate = gateNow;
+	appState->round = 0;
 }
 
 // TA-TODO: Add any process functions for sub-elements of your app here.
@@ -50,9 +52,39 @@ AppState processAppState(AppState *currentAppState, u32 keysPressedBefore, u32 k
      */
 
     AppState nextAppState = *currentAppState;
+	Gate currentGate = nextAppState.fallingGate;
+	currentGate.row+=2;
+	int gateID = currentGate.id;
+	nextAppState.fallingGate = currentGate;
+	//nextAppState.round++;
+	int r = randint(0, 3);
+	Gate gateNow = {0, 40*r, r};
+	if (KEY_JUST_PRESSED(BUTTON_RIGHT, keysPressedNow, keysPressedBefore) && gateID == 0) {
+		nextAppState.round++;
+		
+		nextAppState.fallingGate = gateNow;
+	}
 
-    UNUSED(keysPressedBefore);
-    UNUSED(keysPressedNow);
+	if (KEY_JUST_PRESSED(BUTTON_LEFT, keysPressedNow, keysPressedBefore) && gateID == 1) {
+		nextAppState.round++;
+		nextAppState.fallingGate = gateNow;
+	}
+
+	if (KEY_JUST_PRESSED(BUTTON_UP, keysPressedNow, keysPressedBefore) && gateID == 2) {
+		nextAppState.round++;
+		nextAppState.fallingGate = gateNow;
+	}
+
+	if (KEY_JUST_PRESSED(BUTTON_DOWN, keysPressedNow, keysPressedBefore) && gateID == 3) {
+		nextAppState.round++;
+		nextAppState.fallingGate = gateNow;
+	}
+
+	
+	if (currentGate.row >=160) nextAppState.gameOver = 1;
+	if (nextAppState.round == 10) nextAppState.win = 1;
+    //UNUSED(keysPressedBefore);
+    //UNUSED(keysPressedNow);
 
     return nextAppState;
 }

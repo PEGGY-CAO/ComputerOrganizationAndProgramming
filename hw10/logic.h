@@ -25,7 +25,9 @@ typedef struct {
     *
     */
 	int win;
-	Gate *fallingGate;
+	Gate fallingGate;
+	int round;
+	
 
 } AppState;
 

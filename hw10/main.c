@@ -112,6 +112,8 @@ int main(void) {
 				char *line12 = "start";
 				drawString(20, 130, line12, BLACK);
 				state = APP_INIT;
+				appleP.row = 40;
+				appleP.col = 180;
 				break;
 			}
 			if (KEY_JUST_PRESSED(BUTTON_RIGHT, currentButtons, previousButtons)) {
@@ -160,13 +162,14 @@ int main(void) {
         case APP:
             // Process the app for one frame, store the next state
             nextAppState = processAppState(&currentAppState, previousButtons, currentButtons);
-
+			//nextAppState = currentAppState;
             // Wait for VBlank before we do any drawing.
             waitForVBlank();
 
             // Undraw the previous state
             undrawAppState(&currentAppState);
 
+			//drawImageDMA(0, 0, 56, 80, hedwig);
             // Draw the current state
             drawAppState(&nextAppState);
 

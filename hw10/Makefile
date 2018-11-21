@@ -1,21 +1,21 @@
 ################################################################################
 # These are variables for the GBA toolchain build
 # You can add others if you wish to
-# YUQI CAO 
+# ***** YOUR NAME HERE *****
 ################################################################################
 
-# TA-TODO: Wizard's CS World
+# TA-TODO: Put your game name here.
 # The name of your desired application
 # This should be a just a name i.e MyFirstGBAGame
 # No SPACES AFTER THE NAME.
-PROGNAME = WizardWorld
+PROGNAME = Game
 
 # TA-TODO: Add the C files you want compiled here (replace extension with .o)
 # Here you must put a list of all of the object files
 # that will be compiled into your program. For example
 # if you have main.c and myLib.c then in the following
 # line you would put main.o and myLib.o
-OFILES = gba.o font.o logic.o graphics.o main.o images/garbage.o images/begin0.o images/hogwarts.o images/and.o images/apple.o images/hedwig.o images/lose.o images/not.o images/or.o images/win.o images/parchment.o images/down.o
+OFILES = gba.o font.o logic.o graphics.o main.o images/garbage.o images/hogwarts.o images/begin0.o images/apple.o images/hedwig.o images/parchment.o images/win.o images/lose.o images/or.o images/not.o images/down.o images/and.o
 
 ################################################################################
 # These are various settings used to make the GBA toolchain work
@@ -70,7 +70,7 @@ med : $(PROGNAME).gba
 .PHONY : submit
 submit: clean
 	@rm -f submission.tar.gz
-	@tar czvf submission.tar.gz $(wildcard *)
+	@tar czvf submission.tar.gz *
 
 .PHONY : clean
 clean :
