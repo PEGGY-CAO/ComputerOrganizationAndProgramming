@@ -5,11 +5,14 @@
 
 
 void initializeAppState(AppState* appState) {
-	//drawFullScreenImageDMA(begin0);
     // TA-TODO: Initialize everything that's part of this AppState struct here.
     // Suppose the struct contains random values, make sure everything gets
     // the value it should have when the app begins.
-    UNUSED(appState);
+	appState->gameOver = 0;
+	appState->win = 0;
+	Gate gateNow = {0, 0, 1};
+	appState->fallingGate = &gateNow;
+
 }
 
 // TA-TODO: Add any process functions for sub-elements of your app here.

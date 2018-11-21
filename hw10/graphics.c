@@ -4,6 +4,13 @@
 // Example for the provided garbage image:
 //#include "images/garbage.h"
 #include "images/begin0.h"
+#include "images/hedwig.h"
+#include "images/lose.h"
+#include "images/win.h"
+#include "images/and.h"
+#include "images/or.h"
+#include "images/not.h"
+#include "images/down.h"
 
 // TA-TODO: Add any draw/undraw functions for sub-elements of your app here.
 // For example, for a snake game, you could have a drawSnake function
@@ -12,12 +19,24 @@
 // e.g.:
 // static void drawSnake(Snake* snake);
 // static void drawFood(Food* food);
+void drawRectangle(int row, int col, int width, int height, const u16 *image)
+{
+	const u16 *pixel = image;
+	for (int x = 0; x < height; x++) {
+    	for (int y = 0; y < width; y++) {
+			u16 color = *(pixel + OFFSET(row+x, col+y, 240));
+	    	setPixel(col + y, row + x, color);	
+		}
+    }
+}
+
 
 // This function will be used to draw everything about the app
 // including the background and whatnot.
 void fullDrawAppState(AppState *state) {
     // TA-TODO: IMPLEMENT.
-	//drawFullScreenImageDMA(begin0);
+	fillScreenDMA(WHITE);
+	drawImageDMA(60, 160, 56, 80, hedwig);
     UNUSED(state);
 }
 
@@ -32,5 +51,7 @@ void undrawAppState(AppState *state) {
 // For example, in a Snake game, draw the snake, the food, the score.
 void drawAppState(AppState *state) {
     // TA-TODO: IMPLEMENT.
+	Gate *current = state->fallingGate;
+	drawImageDMA(current->row, current->col, 40, 40, and);
     UNUSED(state);
 }

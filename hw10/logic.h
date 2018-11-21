@@ -4,6 +4,13 @@
 #include "gba.h"
 
 typedef struct {
+	int row;
+	int col;
+	int id;
+} Gate;
+
+
+typedef struct {
     // Store whether or not the game is over in this member:
     int gameOver;
 
@@ -17,6 +24,8 @@ typedef struct {
     * int points;
     *
     */
+	int win;
+	Gate *fallingGate;
 
 } AppState;
 
@@ -33,6 +42,10 @@ typedef struct {
 * } Snake;
 *
 */
+typedef struct {
+    int row;
+    int col;
+} Coordinate;
 
 // This function can initialize an unused AppState struct.
 void initializeAppState(AppState *appState);
