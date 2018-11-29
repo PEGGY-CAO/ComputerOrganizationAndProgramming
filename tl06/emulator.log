@@ -1,0 +1,51 @@
+Starting Mednafen 0.9.48
+ Build information:
+   Compiled with gcc 7.2.0
+   Compiled against zlib 1.2.11, running with zlib 1.2.11(flags=0x000000a9)
+   Compiled against SDL 1.2.15, running with SDL 1.2.15
+   Running with libsndfile-1.0.28
+ Base directory: /cs2110/.mednafen
+ Emulation modules: nes snes gb gba pce lynx md pcfx ngp psx ss ssfplay vb wswan sms gg snes_faust pce_fast demo cdplay
+ Loading settings from "/cs2110/.mednafen/mednafen-09x.cfg"...
+  Loaded 14 valid settings and 0 unknown settings.
+ Initializing joysticks...
+ Loading Animation.gba...
+  Applying IPS file "./Animation.gba.ips"...
+   Failed: Error opening file "./Animation.gba.ips": No such file or directory
+  Using module: gba(GameBoy Advance)
+   Loading override settings from "/cs2110/.mednafen/gba.cfg"...
+    Failed: Error opening file "/cs2110/.mednafen/gba.cfg": No such file or directory
+   Loading override settings from "/cs2110/.mednafen/pgconfig/Animation.gba.cfg"...
+    Failed: Error opening file "/cs2110/.mednafen/pgconfig/Animation.gba.cfg": No such file or directory
+
+   ROM:       3056KiB
+   ROM CRC32: 0xf6a7d8a1
+   ROM MD5:   0x0af1aacba797feac8dae4df669941320
+
+  Loading custom palette from "/cs2110/.mednafen/palettes/gba.pal"...
+   Error: Error opening file "/cs2110/.mednafen/palettes/gba.pal": No such file or directory
+
+  Loading cheats from /cs2110/.mednafen/cheats/gba.cht...
+   Error opening file "/cs2110/.mednafen/cheats/gba.cht": No such file or directory
+
+ Initializing sound...
+  Using "ALSA" audio driver with SexyAL's default device selection.Home directory not accessible: Permission denied
+ALSA lib pcm_hw.c:1713:(_snd_pcm_hw_open) Invalid value for card
+ALSA Error: snd_pcm_open(&alsa_pcm, id ? id : "hw:0", SND_PCM_STREAM_PLAYBACK, 0) No such file or directory
+Error opening a sound device.
+Initializing video...
+  Video Driver: OpenGL
+  Video Mode: 480 x 320 x 32 bpp
+  Shader: none
+  Fullscreen: No
+  Special Scaler: None
+  Scanlines: Off
+  Destination Rectangle: X=0, Y=0, W=480, H=320
+  OpenGL Implementation: VMware, Inc. llvmpipe (LLVM 6.0, 256 bits) 3.0 Mesa 18.0.5
+  Checking extensions:
+   GL_ARB_texture_non_power_of_two found.
+   GL_ARB_sync found.
+  Using non-power-of-2 sized textures.
+  Checking maximum texture size...
+   Apparently it is at least: 8192 x 8192
+  Using GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV for texture source data.
