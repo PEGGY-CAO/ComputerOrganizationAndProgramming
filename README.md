@@ -11,4 +11,5 @@ Homework and course project for computer organization and programming.
 
 5. A "Harry Potter" theme GBA game project writen in C on Linux System
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dW0C2-7SKLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/dW0C2-7SKLA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDizb3Bm6Kp75uUfrPmHkzNFFF_IQ)](https://youtu.be/dW0C2-7SKLA)
+
