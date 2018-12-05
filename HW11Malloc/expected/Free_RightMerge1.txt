@@ -1,0 +1,34 @@
+************EXP ADDRESS LIST************
+                                        
+Address: 0x1                             
+Size: 824                                
+PrevAddr: (nil)                        
+NextAddr: 0x3b9                        
+                                        
+Address: 0x3b9                           
+Size: 120                                
+PrevAddr: 0x1                          
+NextAddr: 0x531                        
+                                        
+Address: 0x531                           
+Size: 720                                
+PrevAddr: 0x3b9                        
+NextAddr: (nil)                        
+                                        
+************* EXP SIZE LIST*************
+                                        
+Address: 0x3b9                           
+Size: 120                                
+PrevSize: (nil)                        
+NextSize: 0x531                        
+                                        
+Address: 0x531                           
+Size: 720                                
+PrevSize: 0x3b9                        
+NextSize: 0x1                          
+                                        
+Address: 0x1                             
+Size: 824                                
+PrevSize: 0x531                        
+NextSize: (nil)                        
+                                        
